@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <nav>
+      <div class="search-container">
+        <i class="fa fa-search search-icon"></i>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Buscar una tarea"
+        />
+      </div>
+      <button class="generar-pdf">
+        <i class="fa-solid fa-file-pdf fa-2xl"></i>
+      </button>
+      <button class="generar-evento-btn">
+        <i class="fa-regular fa-calendar fa-2xl"></i>
+      </button>
+      <ul>
+        <li><a href="#" class="mostrar-graficos-link">Mostrar Gráfico</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="task-list-selection">
+        <!-- Imagen y título de portada -->
+        <div class="img-titulo">
+          <img src="notas.jpg" alt="" class="img-lista" />
+          <h1 class="titulo">Lista de Tareas</h1>
+        </div>
+
+        <!-- Contenedor para todo el formulario -->
+        <div class="form-container">
+          <!-- input para introducir la tarea-->
+          <input
+            type="text"
+            id="new-task-input"
+            placeholder="Introduzca la tarea"
+          />
+
+          <!-- BTN insertar tarea-->
+          <button class="add-task-btn">Añadir</button>
+        </div>
+
+        <!-- Aqui la caja de error -->
+
+        <!-- Lista de tareas-->
+        <ul class="tasks-list-ul"></ul>
+
+        <!-- Section que agrupa el gráfico -->
+        <section class="grafico-container"></section>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
